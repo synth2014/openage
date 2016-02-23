@@ -7,6 +7,7 @@
 // pxd: from libcpp.string cimport string
 #include <string>
 
+#include "../util/crossplatform.h"
 #include "../config.h"
 #include "../util/constexpr.h"
 #include "../util/stringformatter.h"

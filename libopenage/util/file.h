@@ -13,6 +13,8 @@
 #include "compiler.h"
 #include "dir.h"
 
+#include "crossplatform.h"
+
 namespace openage {
 namespace util {
 
