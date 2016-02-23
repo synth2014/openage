@@ -10,7 +10,6 @@
 
 #include "../coord/term.h"
 #include "../util/unicode.h"
-#include "../util/crossplatform.h"
 
 namespace openage {
 namespace console {
@@ -84,7 +83,7 @@ struct buf_char {
 	}
 
 	bool operator !=(const buf_char &other) const {
-		return !(*this == other);
+		return not (*this == other);
 	}
 };
 

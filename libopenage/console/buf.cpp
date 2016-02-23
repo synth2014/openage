@@ -425,9 +425,9 @@ void Buf::process_codepoint(int cp) {
 		//its length, terminators and allowed characters.
 		switch (first) {
 		case '[': //CSI
-			if (len == 1 || (cp >= 0x20 && cp < 0x40)) {
+			if (len == 1 or (cp >= 0x20 and cp < 0x40)) {
 				//regular, allowed char
-			} else if (cp >= 0x40 && cp < 0x7f) {
+			} else if (cp >= 0x40 and cp < 0x7f) {
 				//terminator
 				this->process_csi_escape_sequence();
 			} else {
@@ -440,7 +440,7 @@ void Buf::process_codepoint(int cp) {
 		case '_': //APC
 		case '^': //PM
 			//terminated by ESC \ or BEL
-			if ((previous == 0x1b && cp == '\\') || cp == 0x07) {
+			if ((previous == 0x1b and cp == '\\') or cp == 0x07) {
 				this->process_text_escape_sequence();
 			}
 			break;
@@ -592,7 +592,7 @@ void Buf::print_codepoint(int cp) {
 
 void print_cps(FILE *f, std::vector<int> *v) {
 	for (int i: *v) {
-		if (i >= 0x20 && i < 0x7f) {
+		if (i >= 0x20 and i < 0x7f) {
 			fprintf(f, "%c", (char) i);
 		} else {
 			fprintf(f, "?");
@@ -1078,7 +1078,7 @@ void Buf::clear(term start, term end, bool clear_end) {
 		}
 	}
 
-	if (start.y > end.y || (start.y == end.y && start.x >= end.x)) {
+	if (start.y > end.y or (start.y == end.y and start.x >= end.x)) {
 		return;
 	}
 
