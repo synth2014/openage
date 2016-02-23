@@ -96,7 +96,7 @@ std::vector<lineformat> recurse_data_files(Dir basedir, const std::string &fname
 	size_t line_count = 0;
 	for (auto &entry : result) {
 		line_count += 1;
-		if (not entry.recurse(new_basedir)) {
+		if (! entry.recurse(new_basedir)) {
 			throw Error(MSG(err) <<
 				"Failed to read follow-up files for " <<
 				merged_filename << ":" << line_count);

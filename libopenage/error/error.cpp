@@ -110,7 +110,7 @@ std::ostream &operator <<(std::ostream &os, const Error &e) {
 
 	os << e.type_name();
 
-	if (not e.msg.text.empty()) {
+	if (! e.msg.text.empty()) {
 		os << ": " << e.msg.text;
 	}
 
