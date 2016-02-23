@@ -3,7 +3,9 @@
 #include "error.h"
 
 // Alternative operator support
+#ifdef _MSC_VER
 #include <iso646.h>
+#endif
 
 #include "../util/compiler.h"
 

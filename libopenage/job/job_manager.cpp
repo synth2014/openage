@@ -3,7 +3,9 @@
 #include "job_manager.h"
 
 // Alternative operator support
+#ifdef _MSC_VER
 #include <iso646.h>
+#endif
 
 #include "../util/thread_id.h"
 #include "../log/log.h"

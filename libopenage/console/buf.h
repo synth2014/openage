@@ -3,7 +3,9 @@
 #pragma once
 
 // Alternative operator support
+#ifdef _MSC_VER
 #include <iso646.h>
+#endif
 
 #include <stdint.h>
 #include <stdlib.h>
