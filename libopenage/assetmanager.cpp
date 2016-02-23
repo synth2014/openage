@@ -46,7 +46,7 @@ std::shared_ptr<Texture> AssetManager::load_texture(const std::string &name) {
 	std::shared_ptr<Texture> tex;
 
 	// try to open the texture filename.
-	if (! this->can_load(name)) {
+	if (not this->can_load(name)) {
 		log::log(MSG(warn) <<  "   file " << filename << " is not there...");
 
 		// TODO: add/fetch inotify watch on the containing folder
