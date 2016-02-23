@@ -2,12 +2,16 @@
 
 #pragma once
 
+// Alternative operator support
+#include <iso646.h>
+
 #include <stdint.h>
 #include <stdlib.h>
 #include <sys/types.h>
 
 #include <vector>
 
+#include "../util/crossplatform.h"
 #include "../coord/term.h"
 #include "../util/unicode.h"
 

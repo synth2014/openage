@@ -8,11 +8,13 @@
 #include <string>
 #include <vector>
 
+// Alternative operator support
+#include <iso646.h>
+
 #include "../error/error.h"
 
 #include "compiler.h"
 #include "dir.h"
-
 #include "crossplatform.h"
 
 namespace openage {

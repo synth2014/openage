@@ -2,6 +2,9 @@
 
 #include "job_manager.h"
 
+// Alternative operator support
+#include <iso646.h>
+
 #include "../util/thread_id.h"
 #include "../log/log.h"
 

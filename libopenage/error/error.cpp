@@ -2,6 +2,9 @@
 
 #include "error.h"
 
+// Alternative operator support
+#include <iso646.h>
+
 #include "../util/compiler.h"
 
 #include "stackanalyzer.h"

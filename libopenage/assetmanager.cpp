@@ -8,6 +8,9 @@
 #include <limits.h> /* for NAME_MAX */
 #endif
 
+// Alternative operator support
+#include <iso646.h>
+
 #include "util/compiler.h"
 #include "util/file.h"
 #include "error/error.h"
